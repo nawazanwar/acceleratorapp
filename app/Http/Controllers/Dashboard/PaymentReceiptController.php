@@ -78,7 +78,7 @@ class PaymentReceiptController extends Controller
         } else if ($subscription->subscribed->hasRole(RoleEnum::CUSTOMER)) {
             $model = Customer::where('user_id', $subscription->subscribed->id)->first();
         }
-        $receipt = PaymentReceipt::where('subscription_id', $subscription->subscription_id)->first();
+        $receipt = PaymentReceipt::where('subscription_id', $subscription->id)->first();
         return view('dashboard.payment-receipts.download', compact(
             'pageTitle',
             'subscription',

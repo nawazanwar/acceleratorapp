@@ -25,12 +25,12 @@ class PaymentReceipt extends Model
 
     public function package_subscription(): BelongsTo
     {
-        return $this->belongsTo(Subscription::class, 'subscription_id','subscription_id')
+        return $this->belongsTo(Subscription::class, 'subscription_id','id')
             ->where('subscription_type',SubscriptionTypeEnum::PACKAGE);
     }
     public function plan_subscription(): BelongsTo
     {
-        return $this->belongsTo(Subscription::class, 'subscription_id','subscription_id')
+        return $this->belongsTo(Subscription::class, 'subscription_id','id')
             ->where('subscription_type',SubscriptionTypeEnum::PLAN);
     }
     public function subscribed(): BelongsTo

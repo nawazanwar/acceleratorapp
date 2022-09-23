@@ -305,7 +305,8 @@
                             <div class="container">
                                 <div class="header-content">
                                     <div class="line"></div>
-                                    <h1>OPTIMUM TECH</h1>
+                                    <img src="{{asset('uploads/ot_logo.png')}}" style="width: 100%;max-width: 200px">
+{{--                                    <h1>OPTIMUM TECH</h1>--}}
                                     <h4>Our competent team of inquisitive designers, marketers, and developers are highly capable of strong leadership and problem-solving skills, task execution, and innovative strategy-making.</h4>
                                 </div>
                             </div>
@@ -317,10 +318,11 @@
                             <div class="container">
                                 <div class="header-content">
                                     <div class="line animated bounceInLeft"></div>
-                                    <h1>IT EMPIRE</h1>
+                                    <img src="{{asset('uploads/it-empire-logo.png')}}" style="width: 100%;max-width: 200px">
+{{--                                    <h1>IT EMPIRE</h1>--}}
                                     <h4>
                                         Since its inception, it has grown and progressed to be at the center stage of information and technology, providing effective computing strategies and solutions to Private and Government Organizations. IT Empire has played a major role in some of the largest IT projects in the country.
-                                        </h4>
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +333,14 @@
                             <div class="container">
                                 <div class="header-content">
                                     <div class="line animated bounceInLeft"></div>
-                                    <h1>ANT SOFT</h1>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="{{asset('uploads/ant-soft-logo.png')}}" style="width: 100%;max-width: 200px">
+                                        </div>
+{{--                                        <div class="col-9 mt-3">--}}
+{{--                                            <h1>ANT SOFT</h1>--}}
+{{--                                        </div>--}}
+                                    </div>
                                     <h4>ANT SOFT have been involved in multiple complex E-Commerce B2C integration solutions, Connecting commerce platforms with different third party services. Have also built different integrations regarding payment, shipping, analytics etc.</h4>
                                 </div>
                             </div>
@@ -343,35 +352,35 @@
         <section class="my-5 py-5 counter-back-holder" style="background-image: url({{ asset('uploads/counter_back.webp') }});">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-sm-3 text-center pb-3">
+                    <div class="col-md-3 text-center pb-3">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title site-first-btn-color text-white">130+</h4>
-                                <p class="card-text site-first-color">Business <br />Accelerator</p>
+                                <p class="card-text site-first-color">Business Accelerator</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 text-center pb-3">
+                    <div class="col-md-3 text-center pb-3">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title site-second-btn-color text-white">500+</h4>
-                                <p class="card-text site-second-color">Freelancer</p>
+                                <p class="card-text text-center site-second-color">Freelancer</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 text-center pb-3">
+                    <div class="col-md-3 text-center pb-3">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title site-first-btn-color text-white">8500+</h4>
-                                <p class="card-text site-first-color">Service <br />Provider</p>
+                                <p class="card-text site-first-color">Service Provider</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 text-center pb-3">
+                    <div class="col-md-3 text-center pb-3">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title site-second-btn-color text-white">1700+</h4>
-                                <p class="card-text site-second-color">Mentor</p>
+                                <p class="card-text text-center site-second-color">Mentor</p>
                             </div>
                         </div>
                     </div>

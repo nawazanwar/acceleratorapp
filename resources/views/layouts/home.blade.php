@@ -50,6 +50,7 @@
         margin:10,
         dots:false,
         nav:true,
+        navText:["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"],
         mouseDrag:false,
         autoplay:true,
         animateOut: 'slideOutUp',

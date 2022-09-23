@@ -341,7 +341,6 @@
 }
 
 .counter-back-holder .card-title {
-    width: 72%;
     border: 4px solid white;
     box-shadow: #b4b4b4 1px 1.7px 5.8px;
     font-weight: 600;
@@ -355,6 +354,7 @@
     margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
     text-shadow: #ededed 0.4px 0.5px 0.8px;
 }
 
@@ -461,6 +461,10 @@
     color: white !important;
     border: #01023B !important;
 }
+.site-first-btn-color{
+    margin-left: -20px!important;
+
+}
 
 .site-first-btn-color:hover {
     background-color: #F784B2 !important;
@@ -527,12 +531,16 @@ footer .nav-holder .col.right {
 footer .nav-holder a {
     font-size: 15px;
     line-height: 20px;
+    letter-spacing: 3px;
 }
 
 footer .nav-holder img {
     display: block;
     width: 80px;
     height: 2px;
+}
+.image-right{
+    margin-left: auto;
 }
 
 .btn-circle {
@@ -712,7 +720,7 @@ footer .nav-holder img {
 }
 
 .owl-nav i {
-    font-size: 52px;
+    font-size: 24px;
 }
 
 .owl-nav .owl-prev {
@@ -789,6 +797,11 @@ footer .nav-holder img {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .footer-logo{
+        text-align: center!important;
+    }
+}
 @media screen and (max-width: 500px) {
     .set {
         margin-left: 0 !important;
@@ -1906,7 +1919,7 @@ img {
 .steps{
     clip-path:circle(20% at 50% 50%);
     background-color:#01023B;
-    color:white; 
+    color:white;
     padding:2rem;
 }
 .steps-heading{
@@ -2028,17 +2041,239 @@ img {
     position: relative;
     bottom: 0!important;
 }
+.event-tab{
+    color: #01023b !important;;
+}
+.nav-tabs .nav-link.active{
+    border-image:linear-gradient(#00D3E1FF, #6641F3FF ,#F784B2FF) ;
+    border-width: 2px;
+    border-image-slice:1;
+    margin: 20px;
+}
+.startup-nav-holder li a, .event-tab:hover{
+    color:#01023B!important;
+}
+
 @media screen and (max-width: 576px) {
 
     .card{
         width: 100%;
         margin: auto;
-        max-width:300px;
+        /* max-width:300px; */
+        margin-bottom: 5rem;
     }
     .card-img-adjust{
         width: 100%;
         margin:auto;
         max-width: 150px;
     }
+    .nav-tabs .nav-link{
+        width:100% ;
+    }
 }
 /*ba company card end*/
+
+
+
+
+.event_container {
+  display: flex;
+  width: 100%;
+  height: 180px;
+  background: #FFF;
+  max-width: 750px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+.event_container .event_bg {
+  width: 40%;
+  height: 100%;
+  background: #333;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.event_container .event_info {
+  width: 60%;
+  height: 100%;
+  padding: 10px 20px;
+}
+.event_container .event_info .event_title {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+.event_container .event_info .event_title h5 {
+  /* font-size: 26px; */
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.event_container .event_info .event_desc {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.event_container .event_info .event_desc p {
+  /* font-size: 16px; */
+  font-weight: 400;
+  color: #565861;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.event_container .event_info .event_footer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.event_container .event_info .event_footer .event_date p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.event_container .event_info .event_footer .event_more {
+  display: flex;
+  width: auto;
+  height: 100%;
+  align-items: center;
+}
+.event_container .event_info .event_footer .event_more a.btn_more {
+  display: flex;
+  width: auto;
+  height: 40px;
+  align-items: center;
+  padding: 0 15px;
+  text-decoration: none;
+  color: #01023B;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 2px;
+  will-change: background;
+  transition: background 0.3s, color 0.2s ease-in;
+}
+.event_container .event_info .event_footer .event_more a.btn_more i.material-icons {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 2px;
+}
+.event_container .event_info .event_footer .event_more a.btn_more:hover {
+  background: #01023B;
+  color: #FFF;
+}
+.date-picker{
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.event{
+    background-color: transparent !important;
+    border:none;
+    outline: none;
+}
+@media screen and (max-width: 575px) {
+  .event_container {
+    width: 100%;
+    height: 480px;
+    background: #FFF;
+    flex-direction: column;
+  }
+  .event_container .event_bg {
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+  }
+  .event_container .event_info {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+/*ba company card view service*/
+
+.responsive-map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 400px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px;
+}
+.gmap_iframe {
+    height: 400px !important;
+}
+
+
+.contact-info {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px!important;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-info-icon {
+    margin-bottom: 15px;
+}
+.contact-info-item {
+    background: #fff;
+    border: 1px solid #01023B;
+    color: #01023B!important;
+    padding: 30px 0;
+}
+.contact-info-text h2 {
+    color: #01023B!important;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 700;
+}
+.contact-info-icon i {
+    color: #01023B!important;
+    font-size: 38px!important;
+}
+.contact-info-text h2 {
+    color: #01023B!important;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact-info-text .contact_text {
+    color: #01023B!important;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+}
+.contact-shadow{
+    -webkit-box-shadow:5px 5px 5px 5px #32324f;
+    -moz-box-shadow:5px 5px 5px 5px  #32324f;
+    box-shadow: 3px 3px 3px 3px  #32324f!important;
+}
+.top_animation{
+    transition: .5s!important;
+}
+.top_animation:hover{
+    margin-top: -.50rem!important;
+    transition: .5s!important;
+}
+

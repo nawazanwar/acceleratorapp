@@ -16,8 +16,8 @@
                     @forelse($offices as $office)
                         <div class="col-md-3">
                             <div class="card rounded-3">
-                                <img class="card-img-top site-border" src="/uploads/mobilityy.jpg" alt="Card image"
-                                     style="width:100%">
+                                <img class="" src="/uploads/mobilityy.jpg" alt="Card image"
+                                     style="width:100%;">
                                 <div class="card-body">
                                     <h4 class="card-title text-center">{{$office->name}}</h4>
                                     @if($office->building)
@@ -58,12 +58,17 @@
                                         @if(\App\Services\OfficeService::already_subscribed($office->id))
                                             <a class="view_services">{{ trans('general.already_subscribed') }}</a>
                                         @else
-                                            @if(count($office->plans)>0)
-                                                <a class="btn btn-primary site-first-btn-color rounded-3"
-                                                   href="{{ route('website.office.plans.index',[$office->id]) }}">
-                                                    {{ trans('general.plans') }}
-                                                </a>
-                                            @endif
+
+                                            <a class="btn btn-primary site-first-btn-color rounded-3"
+                                               href="{{ route('website.office.plans.index',[$office->id]) }}">
+                                                {{ trans('general.plans') }}
+                                            </a>
+{{--                                            @if(count($office->plans)>0)--}}
+{{--                                                <a class="btn btn-primary site-first-btn-color rounded-3"--}}
+{{--                                                   href="{{ route('website.office.plans.index',[$office->id]) }}">--}}
+{{--                                                    {{ trans('general.plans') }}--}}
+{{--                                                </a>--}}
+{{--                                            @endif--}}
                                         @endif
                                     </div>
                                 </div>

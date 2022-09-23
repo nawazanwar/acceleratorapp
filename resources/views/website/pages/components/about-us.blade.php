@@ -35,7 +35,7 @@
                         <div class="small-img" style="background-color: #00D3E1"></div>
                         <div class="values-items-item-img-details" style="background-color:#00D3E1">
                             <div>
-                                <p>Freedom <br>  Autonomy <br> Independence<br></p>
+                                <p style="margin-top: 15px">Freedom <br>  Autonomy <br> Independence<br></p>
                             </div>
                         </div>
                     </div>
@@ -50,11 +50,7 @@
                         <div class="small-img" style="background-color: #6641F3"></div>
                         <div class="values-items-item-img-details" style="background-color: #6641F3">
                             <div>
-                                <p>
-                                    Helpfulness <br>
-                                    Enablement <br>
-                                    Adequacy <br>
-                                </p>
+                                <p style="margin-top: 15px">Helpfulness <br>Enablement <br>Adequacy <br></p>
                             </div>
                         </div>
                     </div>
@@ -69,11 +65,7 @@
                         <div class="small-img" style="background-color: #00D3E1"></div>
                         <div class="values-items-item-img-details" style="background-color: #00D3E1">
                             <div>
-                                <p>
-                                    Trust <br>
-                                    Understanding <br>
-                                    Appreciation <br>
-                                </p>
+                                <p style="margin-top: 15px">Trust <br>Understanding <br>Appreciation <br></p>
                             </div>
                         </div>
                     </div>
@@ -88,11 +80,7 @@
                         <div class="small-img" style="background-color: #6641F3"></div>
                         <div class="values-items-item-img-details" style="background-color: #6641F3">
                             <div>
-                                <p>
-                                    Empowerment <br>
-                                    Knowledge <br>
-                                    Resourcefulness <br>
-                                </p>
+                                <p style="margin-top: 15px">Empowerment <br>Knowledge <br>Resourcefulness <br></p>
                             </div>
                         </div>
                     </div>

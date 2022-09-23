@@ -47,6 +47,7 @@ class MediaTypeEnum extends AbstractEnum
     public const  MENTOR_BACK_ID_CARD = 'mentor_back_id_card';
     public const  MENTOR_DOCUMENT = 'mentor_document';
     public const  MENTOR_CERTIFICATE = 'mentor_certificate';
+    public const CUSTOMER_LOGO = 'customer_logo';
 
     public static function getValues(): array
     {

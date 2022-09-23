@@ -26,9 +26,11 @@ class BlogRequest extends FormRequest
         return $blog;
     }
 
-    public function updateData($model)
+    public function updateData($blog)
     {
-        return $model->update($this->all());
+        $blog->update($this->all());
+        $this->saveImage($blog);
+        return $blog;
     }
 
     public function deleteData($model)

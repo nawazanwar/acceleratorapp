@@ -1,7 +1,7 @@
 <x-page-layout
     :page="$page">
     <x-slot name="content">
-        <section class="startup-holder py-5" style="background: url('/uploads/startup.PNG')">
+        <section class="startup-holder py-5">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-10 m-auto">

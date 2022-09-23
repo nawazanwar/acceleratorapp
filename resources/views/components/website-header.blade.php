@@ -29,6 +29,16 @@
                                        href="{{ route('website.plans.index',[\App\Enum\StartUpForEnum::BA,\App\Enum\StartUpTypeEnum::INDIVIDUAL]) }}">
                                         {{$page->name}}
                                     </a>
+                                @elseif($page->code=='event')
+                                    <a class="nav-link" style="color: #01023B!important;"
+                                       href="{{ route('website.events.index') }}">
+                                        {{$page->name}}
+                                    </a>
+                                @elseif($page->code=='news')
+                                    <a class="nav-link" style="color: #01023B!important;"
+                                       href="{{ route('website.news.index') }}">
+                                        {{$page->name}}
+                                    </a>
                                 @else
                                     <a class="nav-link" style="color: #01023B!important;"
                                        href="{{ route('website.pages.index',['type'=>$page->code]) }}">

@@ -23,6 +23,5 @@ class DatabaseSeeder extends Seeder
         $this->call(FloorTypeSeeder::class);
         $this->call(EventTypeSeeder::class);
         $this->call(AccessSeeder::class);
-        $this->call(AddPlanPage::class);
     }
 }

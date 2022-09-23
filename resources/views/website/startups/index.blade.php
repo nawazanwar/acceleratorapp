@@ -29,7 +29,7 @@
                     @if(is_object($records))
                         @if(count($records))
                             @foreach($records as $record)
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     @include('website.startups.list')
                                 </div>
                             @endforeach

@@ -3,6 +3,7 @@
 namespace App\Models\CMS;
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -10,7 +11,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Blog extends Model
 {
     use HasFactory;
-    protected $fillable=[
+
+    protected $fillable = [
         'image',
         'description',
         'heading',
@@ -19,6 +21,11 @@ class Blog extends Model
         'deleted_by'
 
     ];
+
+    public function getCreatedAtAttribute($key): string
+    {
+        return strtoupper(Carbon::parse($key)->format('d M Y'));
+    }
 
     public function createdBy(): BelongsTo
     {

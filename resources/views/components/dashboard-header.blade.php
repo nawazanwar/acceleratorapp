@@ -12,11 +12,11 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item mt-2">
                     <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark"
-                                             href="javascript:void(0)"><i class="ti-menu"></i></a>
+                       href="javascript:void(0)"><i class="ti-menu"></i></a>
                 </li>
                 <li class="nav-item mt-2">
                     <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark"
-                        href="javascript:void(0)"><i class="icon-menu"></i></a>
+                       href="javascript:void(0)"><i class="icon-menu"></i></a>
                 </li>
                 <li class="nav-item mt-2 text-white fw-bold">
                     {{ \Illuminate\Support\Facades\Auth::user()->roles[0]->name }}
@@ -37,6 +37,7 @@
                         <form method="POST" action="{{ route('logout') }}" id="logoutForm">
                             @csrf
                         </form>
+                        <a href="{{route('dashboard.users.edit',[\Illuminate\Support\Facades\Auth::id()])}}" class="dropdown-item"><i class="bx bx-user"></i> My Profile</a>
                     </div>
                 </li>
             </ul>

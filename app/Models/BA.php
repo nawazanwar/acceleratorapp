@@ -28,6 +28,18 @@ class BA extends Model
         'company_address',
         'company_contact_no',
         'company_email',
+        'map_address',
+        'map_latitude',
+        'map_longitude',
+        'about_us',
+        'instagram',
+        'facebook',
+        'twitter',
+        'youtube',
+        'linkedIn',
+        'whatsapp',
+        'office_start_time',
+        'office_end_time'
     ];
 
     public function services(): BelongsToMany

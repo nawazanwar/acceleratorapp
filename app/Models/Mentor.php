@@ -23,6 +23,18 @@ class Mentor extends Model
         'm_contact',
         'm_emergency_contact',
         'm_postal_code',
+        'map_address',
+        'map_latitude',
+        'map_longitude',
+        'about_us',
+        'instagram',
+        'facebook',
+        'twitter',
+        'youtube',
+        'linkedIn',
+        'whatsapp',
+        'office_start_time',
+        'office_end_time'
     ];
 
     public function services(): BelongsToMany

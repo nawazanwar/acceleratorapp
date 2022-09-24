@@ -14,6 +14,19 @@ class Customer extends Model
     use HasFactory;
 
     protected $table = TableEnum::CUSTOMERS;
+    protected $fillable=[
+        'user_id',
+        'map_address',
+        'map_latitude',
+        'map_longitude',
+        'about_us',
+        'instagram',
+        'facebook',
+        'twitter',
+        'youtube',
+        'linkedIn',
+        'whatsapp'
+    ];
 
     public function logo(): HasMany
     {

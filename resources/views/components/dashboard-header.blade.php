@@ -37,7 +37,10 @@
                         <form method="POST" action="{{ route('logout') }}" id="logoutForm">
                             @csrf
                         </form>
-                        <a href="{{route('dashboard.users.edit',[\Illuminate\Support\Facades\Auth::id()])}}" class="dropdown-item"><i class="bx bx-user"></i> My Profile</a>
+                        @if(!\App\Services\PersonService::hasRole(\App\Enum\RoleEnum::SUPER_ADMIN))
+                            <a href="{{route('dashboard.users.edit',[\Illuminate\Support\Facades\Auth::id()])}}"
+                               class="dropdown-item"><i class="bx bx-user"></i> {{trans('general.my_profile')}}</a>
+                        @endif
                     </div>
                 </li>
             </ul>

@@ -1,5 +1,16 @@
 <?php
 return [
+    'map_latitude'=>'Map Latitude',
+    'map_longitude'=>'Map Longitude',
+    'map_address'=>'Map Address',
+
+    'whatsapp'=>'Whatsapp',
+    'twitter'=>'Twitter',
+    'youtube'=>'Youtube',
+    'linkedIn'=>'Linkedin',
+    'about_us'=>'About Us',
+    'my_profile'=>'My Profile',
+
     'explore'=>'Explore',
     'Subscribe'=>'Subscribe',
     'view_services'=>'View Services',

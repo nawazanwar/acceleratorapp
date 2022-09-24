@@ -5,11 +5,13 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
 
     public function up()
     {
         Schema::table(TableEnum::BA, function (Blueprint $table) {
+
             if (!Schema::hasColumn(TableEnum::BA, 'map_address')) {
                 $table->string('map_address')->after('id')->nullable();
             }
@@ -160,5 +162,6 @@ return new class extends Migration {
 
     public function down()
     {
+
     }
 };
